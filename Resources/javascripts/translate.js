@@ -70,9 +70,7 @@ function buildFormElements() {
   });
   
   translateButton.addEventListener("click",function(e) {
-    if(Titanium.Platform.name != 'android') {
-      translateTo = $("select#selectBox"+platformId).val();
-    }
+    if(Titanium.Platform.name != 'android') { translateTo = $("select#selectBox"+platformId).val(); }
     Titanium.App.Properties.setString("sentence",searchField.value);
     buildTranslation();
     searchField.blur();
@@ -81,10 +79,10 @@ function buildFormElements() {
 
 window.onload = function() {
   if(Titanium.Platform.name == 'android') {
-    $("#iphone").hide();
+    $("#android").show();
     platformId = "Android";
   } else {
-    $("#android").hide();
+    $("#iphone").show();
     platformId = "iPhone";
   }
   

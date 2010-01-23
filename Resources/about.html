@@ -6,6 +6,11 @@
 	<script type="text/javascript" src="javascripts/jquery-1.4.js"></script>
 	<script type="text/javascript" src="javascripts/about.js"></script>
 	<link href="stylesheets/index.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+    if(Titanium.Platform.name == 'android') {
+      document.write("<link href=\"stylesheets/android.css\" rel=\"stylesheet\" type=\"text/css\">");
+    }
+  </script>
 </head>
 <body class="about">
   <div class="about">
