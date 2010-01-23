@@ -1,0 +1,56 @@
+body {
+	background-color:#000;
+	color:#fff;
+	font-family:sans-serif;
+	-webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+	-webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
+body.striped {
+  margin: 0px;
+  padding: 10px;
+	background-color:#000;
+	background-image:none;
+	color:#fff;
+}
+
+body.about {
+  background: transparent url(../images/tradui_load_screen.png) no-repeat scroll top left;
+  margin: 0px;
+}
+
+h1,h2 {
+	color:#900;
+}
+
+p {
+	margin-bottom:20px;
+}
+
+.search_wrapper {
+  background: #999;
+  width: 304px;
+  height: 32px;
+  margin-top: -10px;
+  margin-left: -10px;
+  padding: 10px 7px;
+}
+
+.group_header {
+  padding: 0px; 
+	color: #fff; 
+	text-shadow: none; 
+	font-weight: bold;
+	font-size: 22px;
+}
+
+#translateButtonAndroid {
+  margin-top: 8px; height: 60px;
+}
+#translatingHelperAndroid {
+  text-align:center;margin-top: 5px; font-size: 12px;
+}
+#translateAndroid {
+ margin-top: -10px;font-size: 18px; padding:10px; 
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.intridea.tradui"
+      android:versionCode="2"
+      android:versionName="1.0.1"
+>
+	<uses-sdk android:minSdkVersion="3" />
+	<application
+    	android:icon="@drawable/appicon"
+      	android:label="Tradui"
+      	android:name="TraduiApplication"
+      	android:debuggable="false"
+	>
+    	<activity
+        	android:name=".TraduiActivity"
+            android:label="Tradui"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+			android:theme="@style/Theme.Titanium"
+        >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+        	android:name="org.appcelerator.titanium.TitaniumActivity"
+        	android:configChanges="keyboardHidden|orientation"
+      	/>
+
+		
+		
+<!--
+		<provider
+			android:authorities="com.intridea.tradui.titanium"
+			android:name="org.appcelerator.titanium.TitaniumContentProvider"
+		/>
+-->
+		<service
+			android:name="org.appcelerator.titanium.TitaniumAnalyticsService"
+			android:exported="false"
+		/>
+	</application>
+	
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	
+	
+</manifest>

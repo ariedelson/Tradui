@@ -3,6 +3,11 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
 	<script type="text/javascript" src="javascripts/words.js"></script>
 	<link href="stylesheets/index.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+    if(Titanium.Platform.name == 'android') {
+      document.write("<link href=\"stylesheets/android.css\" rel=\"stylesheet\" type=\"text/css\">");
+    }
+  </script>
 </head>
 <body>
   <div id='loading'></div>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.brendanlim.grubit"
-      android:versionCode="1"
-      android:versionName="1"
+      package="com.intridea.tradui"
+      android:versionCode="2"
+      android:versionName="1.0.1"
 >
 	<uses-sdk android:minSdkVersion="3" />
 	<application
@@ -32,7 +32,7 @@
 		
 <!--
 		<provider
-			android:authorities="com.brendanlim.grubit.titanium"
+			android:authorities="com.intridea.tradui.titanium"
 			android:name="org.appcelerator.titanium.TitaniumContentProvider"
 		/>
 -->

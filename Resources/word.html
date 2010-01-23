@@ -4,11 +4,16 @@
 	<script type="text/javascript" src="javascripts/jquery-1.4.js"></script>
 	<script type="text/javascript" src="javascripts/word.js"></script>
 	<link href="stylesheets/index.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+    if(Titanium.Platform.name == 'android') {
+      document.write("<link href=\"stylesheets/android.css\" rel=\"stylesheet\" type=\"text/css\">");
+    }
+  </script>
 </head>
 <body class='striped'>
   <div id='wrapper' style='display: none; padding: 10px;'>
     <div class='group_header'>Translation</div>
-    <div id='words' style='margin-top: 5px;margin-left: 16px;'></div>
+    <div id='words'></div>
   </div>
   <div id='loading'></div>
 </body>

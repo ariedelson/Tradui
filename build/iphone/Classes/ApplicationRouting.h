@@ -28,6 +28,7 @@
 - (NSData*) scriptNamedJavascripts_translate;
 - (NSData*) scriptNamedJavascripts_word;
 - (NSData*) scriptNamedJavascripts_words;
+- (NSData*) styleNamedStylesheets_android;
 - (NSData*) styleNamedStylesheets_index;
 
 @end

@@ -108,3 +108,10 @@ body.striped.nav {
   margin-top: 5px;
   float: right;
 }
+
+#words {
+  margin-top: 5px;margin-left: 18px; font-size: 20px;
+}
+#translateiPhone {
+  margin-top: -10px;font-size: 18px; padding:10px;
+}
